@@ -448,6 +448,33 @@
             
 
             
+            <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
+<link rel="stylesheet" href="/css/gitment.css">
+
+<div class="gitment-card card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitment-content" class="card-content"></div>
+</div>
+
+<script src="/libs/gitment/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+    id: 'Sun Sep 30 2018 17:25:30 GMT+0800',
+    owner: '99525487',
+    repo: 'blog_comments',
+    oauth: {
+        client_id: '23c0583e7879a77261cf',
+        client_secret: '5c8438cc20600d3c115395c7a107ad8f59311f67'
+    }
+});
+
+gitment.render('gitment-content');
+</script>
+
+            
 
             
 
@@ -456,16 +483,6 @@
             
             
                   
-
-            <!-- Add Changyan -->
-            <div id="SOHUCS" sid="[!--id--]" ></div>
-            <script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
-            <script type="text/javascript">
-            window.changyan.api.config({
-            appid: 'cyxc8luuJ',
-            conf: 'prod_fcfef3dcbac7015e3ae4796ff71b575a'
-            });
-            </script>
         </div>
     </div>
 </main>
