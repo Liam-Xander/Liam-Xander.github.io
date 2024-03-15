@@ -3,11 +3,11 @@
   <title>REAL</title>
   
   <subtitle>Liam Xander</subtitle>
-  <link href="http://liam-xander.github.io/atom.xml" rel="self"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="http://liam-xander.github.io/"/>
+  <link href="http://example.com/"/>
   <updated>2024-03-14T13:09:25.600Z</updated>
-  <id>http://liam-xander.github.io/</id>
+  <id>http://example.com/</id>
   
   <author>
     <name>Liam Xander</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>规控前奏——ROS相关</title>
-    <link href="http://liam-xander.github.io/2024/03/14/20240314/"/>
-    <id>http://liam-xander.github.io/2024/03/14/20240314/</id>
+    <link href="http://example.com/2024/03/14/20240314/"/>
+    <id>http://example.com/2024/03/14/20240314/</id>
     <published>2024-03-14T11:00:00.000Z</published>
     <updated>2024-03-14T13:09:25.600Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="ROS" scheme="http://liam-xander.github.io/categories/ROS/"/>
+    <category term="ROS" scheme="http://example.com/categories/ROS/"/>
     
     
-    <category term="ROS" scheme="http://liam-xander.github.io/tags/ROS/"/>
+    <category term="ROS" scheme="http://example.com/tags/ROS/"/>
     
   </entry>
   
   <entry>
     <title>Rototics and Control</title>
-    <link href="http://liam-xander.github.io/2024/03/13/20230312night/"/>
-    <id>http://liam-xander.github.io/2024/03/13/20230312night/</id>
+    <link href="http://example.com/2024/03/13/20230312night/"/>
+    <id>http://example.com/2024/03/13/20230312night/</id>
     <published>2024-03-13T06:25:00.000Z</published>
     <updated>2024-03-12T06:59:33.263Z</updated>
     
@@ -58,19 +58,19 @@
     
     
     
-    <category term="C++" scheme="http://liam-xander.github.io/categories/C/"/>
+    <category term="C++" scheme="http://example.com/categories/C/"/>
     
     
-    <category term="Robotics" scheme="http://liam-xander.github.io/tags/Robotics/"/>
+    <category term="Robotics" scheme="http://example.com/tags/Robotics/"/>
     
-    <category term="C++" scheme="http://liam-xander.github.io/tags/C/"/>
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Rototics and Control</title>
-    <link href="http://liam-xander.github.io/2024/03/13/another/"/>
-    <id>http://liam-xander.github.io/2024/03/13/another/</id>
+    <link href="http://example.com/2024/03/13/another/"/>
+    <id>http://example.com/2024/03/13/another/</id>
     <published>2024-03-13T06:25:00.000Z</published>
     <updated>2024-03-12T06:59:48.051Z</updated>
     
@@ -84,19 +84,19 @@
     
     
     
-    <category term="C++" scheme="http://liam-xander.github.io/categories/C/"/>
+    <category term="C++" scheme="http://example.com/categories/C/"/>
     
     
-    <category term="Robotics" scheme="http://liam-xander.github.io/tags/Robotics/"/>
+    <category term="Robotics" scheme="http://example.com/tags/Robotics/"/>
     
-    <category term="C++" scheme="http://liam-xander.github.io/tags/C/"/>
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>typora-vue-theme主题介绍</title>
-    <link href="http://liam-xander.github.io/2024/03/12/20240312/"/>
-    <id>http://liam-xander.github.io/2024/03/12/20240312/</id>
+    <link href="http://example.com/2024/03/12/20240312/"/>
+    <id>http://example.com/2024/03/12/20240312/</id>
     <published>2024-03-12T01:25:00.000Z</published>
     <updated>2024-03-12T04:23:18.039Z</updated>
     
@@ -110,19 +110,19 @@
     
     
     
-    <category term="C++" scheme="http://liam-xander.github.io/categories/C/"/>
+    <category term="C++" scheme="http://example.com/categories/C/"/>
     
     
-    <category term="Typora" scheme="http://liam-xander.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://liam-xander.github.io/2024/03/11/hello-world/"/>
-    <id>http://liam-xander.github.io/2024/03/11/hello-world/</id>
+    <link href="http://example.com/2024/03/11/hello-world/"/>
+    <id>http://example.com/2024/03/11/hello-world/</id>
     <published>2024-03-11T15:01:39.157Z</published>
     <updated>2024-03-12T04:21:40.569Z</updated>
     
@@ -137,16 +137,16 @@
     
     
     
-    <category term="Typora" scheme="http://liam-xander.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>typora-vue-theme主题介绍</title>
-    <link href="http://liam-xander.github.io/2023/12/29/20240312afternoon/"/>
-    <id>http://liam-xander.github.io/2023/12/29/20240312afternoon/</id>
+    <link href="http://example.com/2023/12/29/20240312afternoon/"/>
+    <id>http://example.com/2023/12/29/20240312afternoon/</id>
     <published>2023-12-29T06:25:00.000Z</published>
     <updated>2024-03-12T04:23:14.934Z</updated>
     
@@ -160,19 +160,19 @@
     
     
     
-    <category term="C++" scheme="http://liam-xander.github.io/categories/C/"/>
+    <category term="C++" scheme="http://example.com/categories/C/"/>
     
     
-    <category term="Typora" scheme="http://liam-xander.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Trajectory planning and cooperative control of UAV lifting system主题介绍</title>
-    <link href="http://liam-xander.github.io/2023/10/16/recommended-articles/"/>
-    <id>http://liam-xander.github.io/2023/10/16/recommended-articles/</id>
+    <link href="http://example.com/2023/10/16/recommended-articles/"/>
+    <id>http://example.com/2023/10/16/recommended-articles/</id>
     <published>2023-10-16T02:34:00.000Z</published>
     <updated>2024-03-12T04:25:39.960Z</updated>
     
@@ -186,19 +186,19 @@
     
     
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/categories/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
     
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
-    <category term="UAV" scheme="http://liam-xander.github.io/tags/UAV/"/>
+    <category term="UAV" scheme="http://example.com/tags/UAV/"/>
     
   </entry>
   
   <entry>
     <title>typora-vue-theme主题介绍</title>
-    <link href="http://liam-xander.github.io/2023/09/07/hello-world-again/"/>
-    <id>http://liam-xander.github.io/2023/09/07/hello-world-again/</id>
+    <link href="http://example.com/2023/09/07/hello-world-again/"/>
+    <id>http://example.com/2023/09/07/hello-world-again/</id>
     <published>2023-09-07T01:25:00.000Z</published>
     <updated>2024-03-12T04:25:45.860Z</updated>
     
@@ -212,19 +212,19 @@
     
     
     
-    <category term="C++" scheme="http://liam-xander.github.io/categories/C/"/>
+    <category term="C++" scheme="http://example.com/categories/C/"/>
     
     
-    <category term="Typora" scheme="http://liam-xander.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Trajectory planning主题介绍</title>
-    <link href="http://liam-xander.github.io/2023/08/26/test/"/>
-    <id>http://liam-xander.github.io/2023/08/26/test/</id>
+    <link href="http://example.com/2023/08/26/test/"/>
+    <id>http://example.com/2023/08/26/test/</id>
     <published>2023-08-26T02:35:00.000Z</published>
     <updated>2024-03-12T04:23:01.978Z</updated>
     
@@ -238,12 +238,12 @@
     
     
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/categories/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
     
     
-    <category term="Typora" scheme="http://liam-xander.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
-    <category term="Markdown" scheme="http://liam-xander.github.io/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
