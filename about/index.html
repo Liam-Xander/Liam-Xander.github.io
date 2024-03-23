@@ -35,6 +35,8 @@
 </head>
 
 
+<link rel="stylesheet" href="/js/prism/prism.css">
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -680,7 +682,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"C++","value":6},{"name":"ROS","value":1},{"name":"thinks","value":1},{"name":"Markdown","value":2}],
+                data: [{"name":"C++","value":6},{"name":"thinks","value":1},{"name":"ROS","value":1},{"name":"Markdown","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -704,7 +706,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Markdown","Typora","C++","Robotics","ROS","thinks","UAV"]
+                data: ["Markdown","Typora","C++","Robotics","thinks","ROS","UAV"]
             }
         ],
         yAxis: [
@@ -899,6 +901,12 @@
             
             
             
+            <a href="/tags/thinks/">
+                <span class="chip center-align waves-effect waves-light chip-default">thinks</span>
+            </a>
+            
+            
+            
             <a href="/tags/Typora/">
                 <span class="chip center-align waves-effect waves-light chip-default">Typora</span>
             </a>
@@ -913,12 +921,6 @@
             
             <a href="/tags/ROS/">
                 <span class="chip center-align waves-effect waves-light chip-default">ROS</span>
-            </a>
-            
-            
-            
-            <a href="/tags/thinks/">
-                <span class="chip center-align waves-effect waves-light chip-default">thinks</span>
             </a>
             
             
@@ -1112,6 +1114,7 @@
 
 <div class="progress-bar"></div>
 
+<script src="/js/prism/prism.js" async></script>
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
