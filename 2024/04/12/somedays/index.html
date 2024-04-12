@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hold on, we&#39;ll win!, REAL">
+    <meta name="keywords" content="20240412, REAL">
     <meta name="description" content="Inexperienced, yet resolute in facing the door of death.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hold on, we&#39;ll win! | REAL</title>
+    <title>20240412 | REAL</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -403,7 +403,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hold on, we&#39;ll win!</h1>
+                    <h1 class="description center-align post-title">20240412</h1>
                 </div>
             </div>
         </div>
@@ -520,8 +520,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/thinks/">
-                                <span class="chip bg-color">thinks</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
                     </div>
@@ -532,8 +532,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/thinks/" class="post-category">
-                                thinks
+                            <a href="/categories/C/" class="post-category">
+                                C++
                             </a>
                         
                     </div>
@@ -545,28 +545,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-04-11
+                    2024-04-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-04-11
+                    2024-04-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    78
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -583,7 +583,30 @@
             <div id="articleContent">
                 <p>怕什么真理无穷，进一寸有一寸的欢喜。——读《胡适谈读书》</p>
 <hr>
-<p>风雪压我两三年<br>我笑风清雪又棉<br>心中仍有鸿鹄志<br>他日登顶啸苍天<br>待到功成与名就<br>生吃黄连苦也甜<br>无人扶我青云志<br>我自踏雪至山巅</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token function">add_executable</span> <span class="token punctuation">(</span> random_complex 
+    src<span class="token operator">/</span>random_complex_generator<span class="token punctuation">.</span>cpp <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>为什么random_complex不是random_complex_generator</p>
+<p>这里的可执行文件的名称可以自由定义。但是，有几个通常的最佳实践可供参考：</p>
+<ol>
+<li><p>通常我们会为可执行文件选择一个具有描述性的名称，这样的话其他人或者你自己在将来回看代码的时候，可以更好地理解该执行文件的功能。</p>
+</li>
+<li><p>如果一个程序的源代码文件不止一个，那么尽量用一个总体的名称来命名可执行文件，而不是使用单个源文件的名字。</p>
+</li>
+<li><p>避免使用系统已有命令或者常用单词作为可执行文件的名字，因为这可能会导致命令行调用时的混淆。</p>
+</li>
+<li><p>规避特殊字符和空格，这些可能导致在命令行环境中引发问题。</p>
+</li>
+</ol>
+<p><code>random_complex</code>是一个很好的名称，因为它既表明了这个程序的主要功能（生成复杂的随机数），又足够简短，便于在命令行中快速输入。</p>
+<h4 id="析构函数需要定义内容吗"><a href="#析构函数需要定义内容吗" class="headerlink" title="析构函数需要定义内容吗"></a>析构函数需要定义内容吗</h4><p>析构函数是一个特殊的成员函数，它在一个对象即将被销毁时被自动调用。它的主要任务是释放对象持有的任何资源，例如动态分配的内存、打开的文件、获取的锁等。<br>在许多情况下，你可以不用定义析构函数。例如，如果你的类不分配任何动态资源，那么编译器提供的默认析构函数应该足够了。默认析构函数只完成最基础的工作，如使对象逐个突变并调用每个成员的析构函数。<br>然而，当你开始处理自己管理的资源时（如动态分配内存，打开文件等），你就需要定义一个析构函数来正确释放这些资源。<br>需要注意的是，当类包含智能指针如<code>shared_ptr</code>,<code>unique_ptr</code>之类的成员变量时，析构函数一般不需要做任何事。智能指针的定义是当它们销毁时自动删除它们指向的对象，除非你需要在类销毁前采取一些特殊行动（如通知其他对象，关闭网络连接等），否则你不需要定义析构函数内容。<br>总的来说，需要在析构函数中定义内容取决于你的类是否持有必须在类析构时释放或清理的资源。</p>
+<h4 id="析构函数一般什么时候被调用"><a href="#析构函数一般什么时候被调用" class="headerlink" title="析构函数一般什么时候被调用"></a>析构函数一般什么时候被调用</h4><p>析构函数在对象销毁时被自动调用，具体时机取决于对象的生命周期。下面是几种常见的情况：<br>对于局部对象：当控制流程离开对象被创建的语句块时，析构函数将被调用。也就是说，析构函数在包含对象的函数或语句块结束时被调用。<br>对于静态局部对象：当程序退出时，析构函数被调用。<br>对于动态分配的对象：当使用 <code>delete</code> 操作符时，析构函数被调用。<br>对于类的成员对象：当包含对象的类的析构函数调用时，会调用成员对象的析构函数。<br>对于全局对象：当程序退出时，析构函数被调用。<br>对于临时对象：在生成临时对象的完整表达式结束后，析构函数被调用。<br>值得注意的是，如果一个对象是基类的派生类对象，基类的析构函数会在派生类的析构函数执行完毕后被调用。由于析构函数的这种特性，所以在设计带有资源管理功能的基类时，必须将基类的析构函数声明为虚函数，以避免只调用基类的析构函数而导致资源未能正确释放的问题。</p>
+<p>析构函数是一个特殊的成员函数，它在一个对象即将被销毁时被自动调用。它的主要任务是释放对象持有的任何资源，例如动态分配的内存、打开的文件、获取的锁等。<br>在许多情况下，你可以不用定义析构函数。例如，如果你的类不分配任何动态资源，那么编译器提供的默认析构函数应该足够了。默认析构函数只完成最基础的工作，如使对象逐个突变并调用每个成员的析构函数。<br>然而，当你开始处理自己管理的资源时（如动态分配内存，打开文件等），你就需要定义一个析构函数来正确释放这些资源。<br>需要注意的是，当类包含智能指针如<code>shared_ptr</code>,<code>unique_ptr</code>之类的成员变量时，析构函数一般不需要做任何事。智能指针的定义是当它们销毁时自动删除它们指向的对象，除非你需要在类销毁前采取一些特殊行动（如通知其他对象，关闭网络连接等），否则你不需要定义析构函数内容。<br>总的来说，需要在析构函数中定义内容取决于你的类是否持有必须在类析构时释放或清理的资源。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">env<span class="token double-colon punctuation">::</span>OccMap<span class="token double-colon punctuation">::</span>Ptr env_ptr_<span class="token punctuation">;</span><span class="token comment">// typedef shared_ptr&lt;OccMap&gt; Ptr;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这句代码解释一下</p>
+<p>这个代码行定义了一个名为 <code>env_ptr_</code> 的 <code>shared_ptr</code>（智能指针），指向<code>OccMap</code> 类型的对象。<code>shared_ptr</code> 是 <code>C++</code> 中用于实现动态内存管理的一个工具，属于智能指针的一种。<br>在这里，<code>OccMap::Ptr</code> 是 <code>std::shared_ptr&lt;OccMap&gt;</code> 的一个别名，也就是说它创建了一个指向 <code>OccMap</code> 类型的共享指针。<code>shared_ptr</code> 的目标是允许多个指针指向同一对象。<code>shared_ptr</code> 使用引用计数，即它维护了一个记录它被引用了多少次的计数器。一旦引用计数器的值变为 <code>0</code>（也就是说没有任何对象引用它），那么它就会自动销毁。<br>在你的代码中，<code>env_ptr_</code> 指向一个 <code>OccMap</code> 类型对象的共享指针被创建，但是它并没有被初始化来指向一个实际的对象。在你尝试解引用该指针之前，你需要确保它被赋值给一个实际的 <code>OccMap</code> 对象。<br>希望上述解释能够帮助您理解这行代码的含义。如果需要针对此主题的进一步解释或有其他问题，欢迎随时进行询问。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">env<span class="token double-colon punctuation">::</span>OccMap<span class="token double-colon punctuation">::</span>Ptr env_ptr_<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这行代码创建了一个类型为<code>OccMap</code>的共享智能指针<code>shared_ptr</code>，名为<code>env_ptr_</code>。<br>首先让我们理解<code>OccMap::Ptr</code>，它是一种类型定义<code>(Type Definition)</code>，也就是给一种数据类型起一个新的名字。在这种情况下，<code>Ptr</code>应该是在<code>OccMap</code>类中定义的，表示一个指向<code>OccMap</code>对象的智能指针<code>shared_ptr</code>。<br><code>shared_ptr</code>是一种在<code>C++</code>中常见的智能指针，它可以确保在任何时候只有一个指针指向一个特定的对象，来避免内存泄露。<br>在这里，<code>env_ptr_</code>是该类型的一个实例。该指针尚未初始化，即它不指向任何内容。在使用该指针之前，必须先使它指向一个<code>OccMap</code>的实例。<br>这个指针用处很多，如可以用在需要改变或传递<code>OccMap</code>对象但不希望进行整个对象的复制的场景中。</p>
+<p>所以我可以理解我<code>env_ptr_</code>是一个<code>shared_ptr</code>智能指针，直系那个了<code>OccMap</code>类型吗<br>是的，你完全正确。在这段代码中，<code>env::OccMap::Ptr</code> 是一个类型别名，表示一个指向 <code>OccMap</code> 对象的 <code>shared_ptr</code>（共享指针）。<code>env_ptr_</code> 是该类型的一个实例。<br>所以，<code>env_ptr_</code> 是一个指向 <code>OccMap</code>对象的智能指针。这意味着 <code>env_ptr_</code> 可以用于访问、修改指向的 <code>OccMap</code> 对象，同时也自动处理了对象的生命周期管理，你不需要手动地释放对象占用的内存。当没有任何 <code>shared_ptr</code> 指向某个对象时，该对象将被自动删除。</p>
 
             </div>
             <hr/>
@@ -609,7 +632,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://Liam-Xander.github.io/2024/04/11/2023someday/">http://Liam-Xander.github.io/2024/04/11/2023someday/</a>
+                    <a href="http://Liam-Xander.github.io/2024/04/12/somedays/">http://Liam-Xander.github.io/2024/04/12/somedays/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -647,8 +670,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/thinks/">
-                                    <span class="chip bg-color">thinks</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
                         </div>
@@ -838,9 +861,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2024/04/12/somedays/">
                     <div class="card-image">
@@ -857,9 +881,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -872,6 +896,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -890,12 +915,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/04/10/202404/">
+                <a href="/2024/04/11/2023someday/">
                     <div class="card-image">
                         
-                        <img src="/images/7.jpg" class="responsive-img" alt="一些还没整理的知识点的汇总">
+                        <img src="/images/8.jpg" class="responsive-img" alt="hold on, we&#39;ll win!">
                         
-                        <span class="card-title">一些还没整理的知识点的汇总</span>
+                        <span class="card-title">hold on, we&#39;ll win!</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -906,14 +931,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ROS/" class="post-category">
-                                    ROS
+                            <a href="/categories/thinks/" class="post-category">
+                                    thinks
                                 </a>
                             
                             
@@ -923,8 +948,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ROS/">
-                        <span class="chip bg-color">ROS</span>
+                    <a href="/tags/thinks/">
+                        <span class="chip bg-color">thinks</span>
                     </a>
                     
                 </div>
